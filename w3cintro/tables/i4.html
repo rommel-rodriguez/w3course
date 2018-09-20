@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table{
+            width: 100%; 
+        }
+        table, td, th{
+            border-collapse: separate; 
+        } 
+        table>thead{
+            background-color: rgb(51,153,255);
+        }
+        td, th{
+            border-spacing: 0.1rem; 
+        }
+        tbody>tr:nth-child(even){
+            background-color: rgb(204,255,255);
+        }
+        tbody>tr:nth-child(odd){
+            background-color: rgb(204,229,255);
+        }
+        main{
+            overflow: scroll;
+        }
+        tbody>tr:hover {
+            background-color: magenta; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption>
+                <p></p>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>Header 01</th>
+                    <th>Header 02</th>
+                    <th>Header 03</th>
+                    <th>Header 04</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Normal01</td>
+                    <td>Normal02</td>
+                    <td>Normal03</td>
+                    <td>Normal03</td>
+                </tr>
+                <tr>
+                    <td>Normal01</td>
+                    <td>Normal02</td>
+                    <td>Normal03</td>
+                    <td>Normal03</td>
+                </tr>
+                <tr>
+                    <td>Normal01</td>
+                    <td>Normal02</td>
+                    <td>Normal03</td>
+                    <td>Normal03</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Footer1</td>
+                    <td colspan="2">Footer2</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

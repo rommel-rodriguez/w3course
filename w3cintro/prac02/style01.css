@@ -1,0 +1,26 @@
+html, body{
+    font-size: 20px;
+    font-family: fantasy;
+}
+#middlemarch{
+    list-style-type: lower-roman;
+    margin-left: 50px;
+    line-height: 2em;
+}
+#taletwocities{
+    list-style-type: lower-alpha;
+}
+li{
+    color: red;
+}
+.female{
+    color:blue;
+}
+.bold{
+    font-weight: bolder;
+}
+.ita{
+    font-style: italic;
+}
+
+

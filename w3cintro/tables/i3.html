@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table, td, th{
+            border: 2px solid black;
+            border-collapse: collapse; 
+        } 
+        table>thead{
+            background-color: darkgrey;
+        }
+        table>tbody{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+   <table>
+       <caption>
+           <p></p>
+       </caption>
+
+       <thead>
+           <tr>
+               <th>Header 01</th>
+               <th>Header 02</th>
+               <th>Header 03</th>
+           </tr>
+       </thead>
+   
+       <tbody>
+           <tr>
+               <td>Normal01</td>
+               <td>Normal02</td>
+               <td rowspan="2">Rowspan1</td>
+           </tr>
+           <tr>
+               <td colspan="2">Colspan1</td>
+           </tr>
+       </tbody>
+
+       <tfoot>
+       </tfoot>
+   </table>
+</body>
+</html>

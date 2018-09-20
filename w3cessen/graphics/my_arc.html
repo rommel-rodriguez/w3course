@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		canvas{
+			width: 800px;
+			height: 500px;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body onload="init()">
+<canvas id="myCanvas">
+	
+</canvas>
+	
+	<script> 
+		thisCanvas = document.querySelector('#myCanvas')
+		context = thisCanvas.getContext('2d')
+		centerX = thisCanvas.width / 2
+		centery = thisCanvas.height / 2
+		function init(){
+			//drawArc()		
+			drawRounded()
+
+		}
+		function drawArc(){
+			context.save()
+			context.strokeStyle = "red"
+			context.strokeRect(centerX - 50,centery - 25,100,50)
+			console.log("Test Printing")
+			context.arc(centerX,centery,10,0,Math.PI*1.5,false)
+			context.stroke()
+			context.fillStyle = "magenta"
+			context.fill()
+			context.restore()
+		}
+		function drawRounded(){
+			context.beginPath()
+			var x0, y0
+			x0 = centerX - 50 
+			y0 = centery
+			context.save()
+			context.moveTo(x0, y0)
+			context.arcTo(centerX, centery, centerX, centery + 30, 20)
+			context.stroke()
+			context.restore()
+		}
+
+	</script>
+</body>
+</html>

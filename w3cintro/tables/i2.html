@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style01.css">
+</head>
+<body>
+    <main>
+        <table class="egg1">
+            <caption>
+                <p>Some Table Description</p>
+            </caption>
+            <colgroup>
+                <col span="1" style="background-color: yellow">
+                <col span="2" style="background-color: orange">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th id="name" class="egg1">Name</th>
+                    <th id="mail" class="egg1">Email</th>
+                    <th id="age" class="egg1">Age</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td headers="name" class="egg1">Row01E1</td>
+                    <td headers="mail" class="egg1">Row01E2</td>
+                    <td headers="age" class="egg1">Row01E3</td>
+                </tr>
+                <tr>
+                    <td colspan=2 rowspan=3 class="egg1">Text</td>
+                    <td class="egg1">Text</td>
+                    <td class="egg1">Text</td>
+                </tr>
+                <tr>
+                    <td class="egg1">Some</td>
+                    <td class="egg1">Some</td>
+                    <td class="egg1">Some</td>
+                </tr>
+                <tr>
+                    <td class="egg1">Thing</td>
+                    <td class="egg1">Thing</td>
+                    <td class="egg1">Test</td>
+                </tr>
+                <tr>
+                    <td class="egg1">Else</td>
+                    <td class="egg1">Else</td>
+                    <td class="egg1">Age</td>
+                </tr>
+            </tbody>
+
+            <tfoot style="font-style: italic">
+                <tr>
+                    <td class="egg1">3 unique names</td>
+                    <td class="egg1">2 unique emails</td>
+                    <td class="egg1">5 unique ages</td>
+                </tr>
+            </tfoot>
+
+            
+        </table>    
+    </main>
+</body>
+</html>

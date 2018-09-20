@@ -1,0 +1,31 @@
+body{
+	margin: 0px;
+}
+.fc{
+	display: flex;
+	flex-flow: row wrap;
+	min-height: calc(100vh - 200px);
+}
+.fc > *{
+	flex:1;
+	margin: 10px;
+	padding:20px;
+	background-color: lightgrey;
+	border-radius: 10px;
+}
+
+header, footer{
+	box-sizing: border-box;
+	width: 100vw;
+	height:100px;
+	background-color: lightyellow;
+	border-radius: 10px;
+}
+header ul{
+	display: flex;	
+	flex-flow: row wrap;
+}
+ul > *{
+	list-style-position: inside;
+	flex: 1;
+}

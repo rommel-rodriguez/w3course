@@ -1,0 +1,18 @@
+body{
+	margin:0;
+}
+p{
+	margin:0;
+}
+header{
+	height: 80px;
+	background-color: yellow;
+}
+footer{
+	background-color: orange;
+	height: 80px;
+}
+article{
+	background-color: lightblue;
+	min-height: calc(100vh - 160px);
+}

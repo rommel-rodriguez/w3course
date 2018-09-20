@@ -1,0 +1,5 @@
+HE MANIFEST FILE MUST BE SERVED WITH THE CORRECT MIME TYPE
+
+The HTTP server that serves your files must be configured so that .appcache files are served with the MIME type text/cache-manifest. For example, with the Apache server, this line must be added in the HTTP.conf configuration file (or in the .htaccess files): 
+
+AddType text/cache-manifest .appcache

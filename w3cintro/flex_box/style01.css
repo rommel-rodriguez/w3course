@@ -1,0 +1,21 @@
+html, body{
+	font-size: 16px;
+}
+header{
+	text-align: center;
+}
+section{
+	
+}
+body{
+}
+section.c1, section.c2{
+	float: left;
+	width: 49vw;
+	/*display: inline;*/
+}
+section.c1{
+
+}		
+section.c2{
+}		

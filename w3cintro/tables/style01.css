@@ -1,0 +1,9 @@
+table.egg1, th.egg1, td.egg1{
+   border: 3px solid black; 
+   border-collapse: collapse;
+}
+th.egg1, td.egg1{
+    padding: 15px;
+}
+table.egg1 tr:hover { background-color: #ccff99; }
+tr:nth-child(even) { background-color: grey; }

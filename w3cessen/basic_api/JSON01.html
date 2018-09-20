@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Storing JSON Objects with Local Storage</title>
+  <script>
+    var personObject= {'firstName': 'Michel', 'lastName': 'Buffa'};
+ 
+// Store the object as a JSON String
+localStorage.setItem('testObject', JSON.stringify(personObject));
+ 
+// Retrieve the object from storage
+var retrievedObject = JSON.parse(localStorage.getItem('testObject'));
+    
+    console.log(retrievedObject.firstName + " " + retrievedObject.lastName);
+ 
+// then you can use retrievedObject.firstName, retrievedObject.lastName...
+  </script>
+</head>
+<body>
+</body>
+</html>

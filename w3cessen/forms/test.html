@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		input[ type = "range"]{
+			background-color: black;
+		}
+		input:invalid{
+			background-color: red;
+
+		}
+		input:valid{
+			background-color: lightblue;
+
+		}
+	</style>
+</head>
+<body >
+<label for="this-range">
+	<input type="range" min="10" max="100" step="5" id="this-range" value="11.5" required>
+	<span><output id="range-ouput"> 10.5 </output></span>
+</label>	
+	<script>
+		
+		var myRange = document.querySelector("#this-range")	
+		var rangeOuput = document.querySelector("#range-ouput")
+		console.log("Everything fine till here")
+		myRange.addEventListener('input', writeOutput, false)
+		function writeOutput(event){
+			var currentValue = myRange.value
+			rangeOuput.innerHTML = "<b>" + currentValue + "</b>"
+		}
+	</script>
+
+</body>
+</html>

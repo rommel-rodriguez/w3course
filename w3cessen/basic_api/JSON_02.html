@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>  
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script>
+		var champNom, champPrenom;
+		// Tableau à sauvegarder
+		var contacts = [];
+
+		function init() {
+		  champNom = document.getElementById("nom");
+		  champPrenom = document.querySelector("#prenom");
+		  
+		  console.log("Je regarde si il y a des clients dans le local storage");
+		  if(localStorage.contacts) {
+		    contacts = JSON.parse(localStorage.contacts);
+		  } 
+		  
+		  console.log("init effectué");
+		}
+
+		function soumettre() {
+		  // QUand on rentre ici le formulaire a été validé builtin par le browser
+		  console.log("sauvegarde du formulaire");
+		  console.log("valeur du nom : " + champNom.value);
+		  
+		 // On crée un nouveau contact avec
+		  // les données du formulaire
+		 var contact = {};
+		  contact.nom = champNom.value;
+		  contact.prenom = champPrenom.value;
+		  
+		  // On rajoute le client dans le tableau
+		  contacts.push(contact);
+		  
+		  // On sauvegarde au format JSON
+		  localStorage.contacts = JSON.stringify(contacts);
+		  
+		  return false;
+		} 	
+  </script>
+</head>
+<body onload="init();">
+<form onsubmit="return soumettre();">
+Nom :   <input id="nom" type="text" required><br> 
+ 
+Prénom :  <input id="prenom" type="text" required><br>
+  
+  <button>Submit</button>
+  </form> 
+</body>
+</html>

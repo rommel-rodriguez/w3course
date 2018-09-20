@@ -1,0 +1,16 @@
+html, body {
+    font-size: 20px;
+    line-height: 2rem;
+}
+h1{
+    font-size: 1.5rem;
+}
+li{
+    font-size: 0.8rem;
+}
+main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
